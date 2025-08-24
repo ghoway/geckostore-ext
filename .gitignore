@@ -1,0 +1,8 @@
+build.js
+obfuscator.config.js
+package.json
+package-lock.json
+/src
+/node_modules
+
+!/dist/

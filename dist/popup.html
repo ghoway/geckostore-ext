@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gecko Store Extension</title>
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <!-- Kontainer Header -->
+    <div id="header-container">
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
+        <div id="header-content" class="hidden">
+            <img src="images/logo.png" alt="Gecko Store Logo" class="header-logo">
+            <span class="header-title">Gecko Store</span>
+            <p class="header-note">
+                Use the 'Soft Logout' button to switch accounts.
+            </p>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="search-container">
+        <input type="search" id="search-input" class="search-bar" placeholder="Search for a service...">
+    </div>
+
+    <!-- Kontainer Konten yang Bisa di-scroll -->
+    <div id="main-content">
+        <div id="tools-container" class="hidden">
+            <!-- Konten akan di-render oleh popup.js -->
+        </div>
+        <div id="message-container" class="hidden">
+            <!-- Pesan akan di-render oleh popup.js -->
+        </div>
+    </div>
+
+    <!-- Footer dengan tombol Soft Logout -->
+    <div class="footer-toolbar">
+        <button id="softLogoutBtn" class="soft-logout-button hidden">
+            Soft Logout
+        </button>
+    </div>
+
+    <!-- Link JavaScript -->
+    <script src="popup.js"></script>
+</body>
+
+</html>
